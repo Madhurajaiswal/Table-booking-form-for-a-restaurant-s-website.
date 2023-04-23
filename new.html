@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Table Booking Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			color: #333;
+		}
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+		input[type=text], input[type=email], input[type=tel], select {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			font-size: 16px;
+			font-family: Arial, sans-serif;
+		}
+		input[type=submit] {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		input[type=submit]:hover {
+			background-color: #555;
+		}
+		label {
+			font-weight: bold;
+			display: block;
+			margin-bottom: 10px;
+		}
+		@media screen and (max-width: 768px) {
+			form {
+				padding: 10px;
+			}
+			input[type=submit] {
+				margin-top: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Table Booking Form</h1>
+	<form action="#" method="post">
+		<label for="date">Date:</label>
+		<input type="date" name="date" id="date" required>
+
+		<label for="time">Time:</label>
+		<input type="time" name="time" id="time" required>
+
+		<label for="guests">Number of guests:</label>
+		<select name="guests" id="guests" required>
+			<option value="">Select number of guests</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10+">10+</option>
+		</select>
+
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" required>
+
+		<label for="phone">Phone:</label>
+		<input type="tel" name="phone" id="phone" required>
+
+		<input type="submit" value="Submit">
+	</form>
